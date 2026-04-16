@@ -292,7 +292,7 @@ export default function OutreachPanel({ holders, allHolders, onClose, activeUser
             <div style={{ padding: '12px 20px', borderBottom: '1px solid var(--gray)', background: 'var(--black)', flexShrink: 0 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
                 <div style={{ fontSize: 10, color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>GIF to attach</div>
-                <div style={{ fontSize: 10, color: '#444' }}>{gifsLoading ? 'Loading GIFs...' : `${allGifs.length} GIFs`}</div>
+                <div style={{ fontSize: 10, color: '#444' }}>{GVC_GIFS.length} GIFs</div>
               </div>
               <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 6 }}>
                 {gifsLoading ? (
@@ -310,8 +310,7 @@ export default function OutreachPanel({ holders, allHolders, onClose, activeUser
                       <img src={gif.preview} alt={gif.title} style={{ width: 48, height: 48, objectFit: 'cover', borderRadius: 5 }} />
                       <span style={{ fontSize: 9, color: selectedGif?.id === gif.id ? 'var(--gold)' : 'var(--text-muted)', whiteSpace: 'nowrap', maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis' }}>{gif.title}</span>
                     </button>
-                  ))
-                )}
+                  ))}
               </div>
             </div>
 
