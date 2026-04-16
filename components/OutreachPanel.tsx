@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Holder, GVC_GIFS } from '@/lib/holders'
-import { fetchChannelGifs, GiphyGif } from '@/lib/giphy'
 import { logOutreach, TEAM_MEMBERS, TEAM_COLORS, TeamMember } from '@/lib/crm-store'
 import {
   getTemplatesForUser, saveTemplatesForUser, resetTemplatesForUser,
@@ -28,9 +27,7 @@ interface TemplateSelection {
 
 export default function OutreachPanel({ holders, allHolders, onClose, activeUser, onActiveUserChange }: Props) {
   const { toast } = useToast()
-  const [allGifs, setAllGifs] = useState<GiphyGif[]>([])
-  const [gifsLoading, setGifsLoading] = useState(true)
-  const [selectedGif, setSelectedGif] = useState<GiphyGif | null>(null)
+  const [selectedGif, setSelectedGif] = useState(GVC_GIFS[0])
   const [myTemplates, setMyTemplates] = useState<DMTemplate[]>([])
   const [selection, setSelection] = useState<Record<string, TemplateSelection>>({})
   const [dmMessages, setDmMessages] = useState<Record<string, string>>({})
