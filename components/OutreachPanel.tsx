@@ -367,7 +367,7 @@ export default function OutreachPanel({ holders, allHolders, onClose, activeUser
 
                     {/* Message */}
                     <div style={{ padding: '12px 16px', display: 'flex', gap: 12 }}>
-                      <img src={selectedGif?.url || ''} alt={selectedGif?.title || 'GIF'} style={{ width: 60, height: 60, objectFit: 'cover', borderRadius: 7, border: '1px solid var(--gray)', flexShrink: 0 }} />
+                      <img src={selectedGif?.url || ''} alt={selectedGif?.label || 'GIF'} style={{ width: 60, height: 60, objectFit: 'cover', borderRadius: 7, border: '1px solid var(--gray)', flexShrink: 0 }} />
                       <textarea value={dmMessages[holder.id] || ''} onChange={e => setDmMessages(prev => ({ ...prev, [holder.id]: e.target.value }))}
                         placeholder="Select a message type above to populate..."
                         rows={4} style={{ flex: 1, background: 'var(--gray)', border: '1px solid var(--gray-light)', borderRadius: 7, color: 'var(--text-primary)', fontSize: 12, lineHeight: 1.6, padding: '8px 11px', resize: 'vertical', outline: 'none', fontFamily: 'inherit', transition: 'border-color 0.15s' }}
