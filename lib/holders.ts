@@ -31,14 +31,14 @@ export const MOCK_HOLDERS: Holder[] = [
 ]
 
 export const GVC_GIFS = [
-  { id: 'welcome', label: 'Welcome', url: 'https://media3.giphy.com/media/M8OObCJn10limG2uNx/giphy.gif', emoji: '🤝' },
-  { id: 'hype', label: 'Vibetown', url: 'https://media0.giphy.com/media/z4c3y3W8hhgH0wRaQc/giphy.gif', emoji: '🔥' },
-  { id: 'sup', label: 'Sup', url: 'https://media2.giphy.com/media/2ATcJnbpzboIq4ZFNo/giphy.gif', emoji: '👋' },
-  { id: 'thinking', label: 'Pondering', url: 'https://media3.giphy.com/media/WAJ9lDsrZcpZOfQ0nT/giphy.gif', emoji: '🤔' },
-  { id: 'cool', label: 'Sunglasses', url: 'https://media2.giphy.com/media/mHvlVNAq27Y3aHx0t2/giphy.gif', emoji: '😎' },
-  { id: 'love', label: 'Love', url: 'https://media2.giphy.com/media/wtCGxr8nkvlkQP7B2b/giphy.gif', emoji: '❤️' },
-  { id: 'batman', label: 'Batman', url: 'https://media2.giphy.com/media/DrI0YHN02niFr1KV3B/giphy.gif', emoji: '🦇' },
-  { id: 'xmas', label: 'Christmas', url: 'https://media2.giphy.com/media/ClU4DWejXfyfTzNfOt/giphy.gif', emoji: '🎄' },
-  { id: 'santa', label: 'Santa', url: 'https://media0.giphy.com/media/N7bZmGrhsQ440hF5Yh/giphy.gif', emoji: '🎅' },
-  { id: 'office', label: 'The Office', url: 'https://media1.giphy.com/media/xJf9WPNi0c5TYgHRWk/giphy.gif', emoji: '😏' },
+  { id: 'buzzd',       label: 'Buzzd',       url: 'https://media.giphy.com/media/2F9NoLzsg9RgBSE10X/giphy.gif', preview: 'https://media.giphy.com/media/2F9NoLzsg9RgBSE10X/giphy-downsized-small.gif', emoji: '🏙️' },
+  { id: 'love',        label: 'Love',        url: 'https://media.giphy.com/media/ygxlakNTPSHgV3k7m0/giphy.gif', preview: 'https://media.giphy.com/media/ygxlakNTPSHgV3k7m0/giphy-downsized-small.gif', emoji: '❤️' },
+  { id: 'gvc',         label: 'GVC',         url: 'https://media.giphy.com/media/slaDyEARpzHLFt1pbl/giphy.gif', preview: 'https://media.giphy.com/media/slaDyEARpzHLFt1pbl/giphy-downsized-small.gif', emoji: '✨' },
+  { id: 'sunshine',    label: 'Sunshine',    url: 'https://media.giphy.com/media/JElPMiBMkozSxn1ZY4/giphy.gif', preview: 'https://media.giphy.com/media/JElPMiBMkozSxn1ZY4/giphy-downsized-small.gif', emoji: '☀️' },
+  { id: 'buzzd2',      label: 'Buzzd 2',     url: 'https://media.giphy.com/media/yeac8qwFZFQxTkgJDn/giphy.gif', preview: 'https://media.giphy.com/media/yeac8qwFZFQxTkgJDn/giphy-downsized-small.gif', emoji: '🔥' },
+  { id: 'smart',       label: 'Smart',       url: 'https://media.giphy.com/media/WAJ9lDsrZcpZOfQ0nT/giphy.gif', preview: 'https://media.giphy.com/media/WAJ9lDsrZcpZOfQ0nT/giphy-downsized-small.gif', emoji: '🧠' },
+  { id: 'welcome',     label: 'Welcome',     url: 'https://media.giphy.com/media/M8OObCJn10limG2uNx/giphy.gif', preview: 'https://media.giphy.com/media/M8OObCJn10limG2uNx/giphy-downsized-small.gif', emoji: '👋' },
+  { id: 'sup',         label: 'Sup',         url: 'https://media.giphy.com/media/2ATcJnbpzboIq4ZFNo/giphy.gif', preview: 'https://media.giphy.com/media/2ATcJnbpzboIq4ZFNo/giphy-downsized-small.gif', emoji: '🤙' },
+  { id: 'tendy',       label: 'Tendy',       url: 'https://media.giphy.com/media/Uq9Bb6BcFRGFjfFwbd/giphy.gif', preview: 'https://media.giphy.com/media/Uq9Bb6BcFRGFjfFwbd/giphy-downsized-small.gif', emoji: '💰' },
+  { id: 'fingerguns',  label: 'Finger Guns', url: 'https://media.giphy.com/media/yZCUdGSEOi0CC4HM9k/giphy.gif', preview: 'https://media.giphy.com/media/yZCUdGSEOi0CC4HM9k/giphy-downsized-small.gif', emoji: '🤌' },
 ]

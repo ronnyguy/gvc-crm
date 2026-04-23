@@ -295,22 +295,17 @@ export default function OutreachPanel({ holders, allHolders, onClose, activeUser
                 <div style={{ fontSize: 10, color: '#444' }}>{GVC_GIFS.length} GIFs</div>
               </div>
               <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 6 }}>
-                {gifsLoading ? (
-                  Array.from({ length: 6 }).map((_, i) => (
-                    <div key={i} style={{ width: 64, height: 80, background: 'var(--gray)', borderRadius: 9, flexShrink: 0, opacity: 0.4 }} />
-                  ))
-                ) : (
-                  allGifs.map(gif => (
-                    <button key={gif.id} onClick={() => setSelectedGif(gif)} style={{
-                      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, padding: '6px 8px',
-                      background: selectedGif?.id === gif.id ? 'rgba(255,224,72,0.08)' : 'var(--gray)',
-                      border: `1.5px solid ${selectedGif?.id === gif.id ? 'var(--gold)' : 'transparent'}`,
-                      borderRadius: 9, cursor: 'pointer', transition: 'all 0.15s', flexShrink: 0,
-                    }}>
-                      <img src={gif.preview} alt={gif.title} style={{ width: 48, height: 48, objectFit: 'cover', borderRadius: 5 }} />
-                      <span style={{ fontSize: 9, color: selectedGif?.id === gif.id ? 'var(--gold)' : 'var(--text-muted)', whiteSpace: 'nowrap', maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis' }}>{gif.title}</span>
-                    </button>
-                  ))}
+                {GVC_GIFS.map(gif => (
+                  <button key={gif.id} onClick={() => setSelectedGif(gif)} style={{
+                    display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, padding: '6px 8px',
+                    background: selectedGif?.id === gif.id ? 'rgba(255,224,72,0.08)' : 'var(--gray)',
+                    border: `1.5px solid ${selectedGif?.id === gif.id ? 'var(--gold)' : 'transparent'}`,
+                    borderRadius: 9, cursor: 'pointer', transition: 'all 0.15s', flexShrink: 0,
+                  }}>
+                    <img src={gif.preview} alt={gif.label} style={{ width: 48, height: 48, objectFit: 'cover', borderRadius: 5 }} />
+                    <span style={{ fontSize: 9, color: selectedGif?.id === gif.id ? 'var(--gold)' : 'var(--text-muted)', whiteSpace: 'nowrap', maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis' }}>{gif.label}</span>
+                  </button>
+                ))}
               </div>
             </div>
 
